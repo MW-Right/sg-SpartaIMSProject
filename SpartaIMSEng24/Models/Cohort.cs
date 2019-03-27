@@ -14,6 +14,13 @@ namespace SpartaIMSEng24.Models
         [Display(Name = "Cohort Name")]
         public string CohortName { get; set; }
         public int CohortNumber { get; set; }
+        //public string CohortName
+        //{ get
+        //    {
+        //        return CohortType + "-" + CohortNumber;
+        //    }
+        //    set { }
+        //}
 
         //Adding foreign key constraints
         public List<SpartanUser> SpartanUsers { get; set; }

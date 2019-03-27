@@ -49,7 +49,7 @@ namespace SpartaIMSEng24.Controllers
         // GET: SpartanUser/Create
         public IActionResult Create()
         {
-            ViewData["CohortID"] = new SelectList(_context.Cohorts, "CohortID", "CohortID");
+            ViewData["CohortID"] = new SelectList(_context.Set<Cohort>(), "CohortID", "CohortID");
             ViewData["JobRoleID"] = new SelectList(_context.JobRoles, "JobRoleID", "JobRoleID");
             return View();
         }
